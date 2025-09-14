@@ -155,7 +155,7 @@
                     <div class="video-preview">
                         <img src="Video/thumbnails/video1_thumb.jpg" alt="Традиционная композиция" class="preview-image">
                         <div class="video-overlay">
-                            <button class="play-btn" onclick="playVideo(this)">
+                            <button class="play-btn" onclick="openVideoModal('Video/AQO60VHyDY9iQU0h_kNygxJxG8dJnrZsShM59iB340MlsyuF79izckWp5zRQ14Q.mp4')">
                                 <i class="fas fa-play"></i>
                             </button>
                         </div>
@@ -166,7 +166,7 @@
                     <div class="video-preview">
                         <img src="Video/thumbnails/video2_thumb.jpg" alt="Современная интерпретация" class="preview-image">
                         <div class="video-overlay">
-                            <button class="play-btn" onclick="playVideo(this)">
+                            <button class="play-btn" onclick="openVideoModal('Video/AQOi2cc1o7Lj8RUKo0mNPFNeA2YsNVrd9z4dV0K36IawGHzY7svKcveAPlHDO7U6.mp4')">
                                 <i class="fas fa-play"></i>
                             </button>
                         </div>
@@ -177,7 +177,7 @@
                     <div class="video-preview">
                         <img src="Video/thumbnails/video3_thumb.jpg" alt="Эмоциональное исполнение" class="preview-image">
                         <div class="video-overlay">
-                            <button class="play-btn" onclick="playVideo(this)">
+                            <button class="play-btn" onclick="openVideoModal('Video/AQOTCqU_rwwMcTrJsYT0qJOAmtDFDV1BGE7UgCkImHyirop5M4BHexRYXx5K_fY.mp4')">
                                 <i class="fas fa-play"></i>
                             </button>
                         </div>
@@ -188,7 +188,7 @@
                     <div class="video-preview">
                         <img src="Video/thumbnails/video4_thumb.jpg" alt="Виртуозная техника" class="preview-image">
                         <div class="video-overlay">
-                            <button class="play-btn" onclick="playVideo(this)">
+                            <button class="play-btn" onclick="openVideoModal('Video/AQPT1_wvdZkvTZ4b4lXzF3QH5q_3W0NUA0R_BLfXDXPlkX0ZDDCJNlZ2zG4bCDL.mp4')">
                                 <i class="fas fa-play"></i>
                             </button>
                         </div>
@@ -280,6 +280,20 @@
         <div class="lightbox-content">
             <span class="lightbox-close">&times;</span>
             <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-overlay" onclick="closeVideoModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideoModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <video id="modalVideo" controls autoplay>
+                <source src="" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
         </div>
     </div>
 

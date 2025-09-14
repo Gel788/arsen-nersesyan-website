@@ -537,9 +537,54 @@ function throttle(func, limit) {
     };
 }
 
+// Video Modal Functions
+function openVideoModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    
+    video.src = videoSrc;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Play video when modal opens
+    video.play().catch(e => {
+        console.log('Autoplay prevented:', e);
+    });
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    
+    modal.classList.remove('active');
+    video.pause();
+    video.currentTime = 0;
+    video.src = '';
+    document.body.style.overflow = 'auto';
+}
+
+// Close video modal on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('videoModal');
+        if (modal.classList.contains('active')) {
+            closeVideoModal();
+        }
+    }
+});
+
+// Legacy function for backward compatibility
+function playVideo(button) {
+    // This function is kept for backward compatibility
+    // The new openVideoModal function is used instead
+    console.log('playVideo called - use openVideoModal instead');
+}
+
 // Export functions for global access
 window.ArsenNercesyan = {
     playVideo: window.playVideo,
+    openVideoModal: window.openVideoModal,
+    closeVideoModal: window.closeVideoModal,
     openLightbox: window.openLightbox,
     showNotification: function(message, type) {
         // This will be available after DOM is loaded
