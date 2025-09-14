@@ -197,25 +197,25 @@ body.nav-open {
 
 .image-wrapper {
     position: relative;
-    width: 85%;
-    max-width: 600px;
+    width: 70%;
+    max-width: 400px;
     aspect-ratio: 4/5;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
-    border: 6px solid var(--gold);
+    border: 3px solid var(--gold);
     box-shadow: 
-        0 0 0 3px rgba(212, 175, 55, 0.5),
-        0 20px 60px rgba(0, 0, 0, 0.6),
-        0 0 100px rgba(212, 175, 55, 0.3);
+        0 0 0 1px rgba(212, 175, 55, 0.3),
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 50px rgba(212, 175, 55, 0.1);
     transition: all 0.3s ease;
 }
 
 .image-wrapper:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-5px);
     box-shadow: 
-        0 0 0 4px rgba(212, 175, 55, 0.7),
-        0 30px 80px rgba(0, 0, 0, 0.8),
-        0 0 150px rgba(212, 175, 55, 0.5);
+        0 0 0 1px rgba(212, 175, 55, 0.5),
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(212, 175, 55, 0.2);
 }
 
 .hero-image {
@@ -889,14 +889,14 @@ section {
     }
     
     .image-wrapper {
-        width: 90%;
-        max-width: 700px;
-        border-width: 8px;
-        border-radius: 40px;
+        width: 75%;
+        max-width: 500px;
+        border-width: 4px;
+        border-radius: 25px;
         box-shadow: 
-            0 0 0 4px rgba(212, 175, 55, 0.6),
-            0 30px 80px rgba(0, 0, 0, 0.7),
-            0 0 120px rgba(212, 175, 55, 0.4);
+            0 0 0 2px rgba(212, 175, 55, 0.4),
+            0 15px 40px rgba(0, 0, 0, 0.4),
+            0 0 60px rgba(212, 175, 55, 0.2);
     }
     
     .content-wrapper {
@@ -922,14 +922,14 @@ section {
     }
     
     .image-wrapper {
-        width: 80%;
-        max-width: 500px;
-        border-width: 5px;
-        border-radius: 25px;
+        width: 70%;
+        max-width: 400px;
+        border-width: 3px;
+        border-radius: 20px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 25px 50px rgba(0, 0, 0, 0.5),
-            0 0 80px rgba(212, 175, 55, 0.2);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 10px 30px rgba(0, 0, 0, 0.3),
+            0 0 50px rgba(212, 175, 55, 0.1);
     }
 }
 
@@ -965,14 +965,14 @@ section {
     }
     
     .image-wrapper {
-        width: 85%;
-        max-width: 450px;
-        border-width: 4px;
-        border-radius: 20px;
+        width: 75%;
+        max-width: 380px;
+        border-width: 3px;
+        border-radius: 18px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 20px 40px rgba(0, 0, 0, 0.5),
-            0 0 70px rgba(212, 175, 55, 0.2);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 10px 25px rgba(0, 0, 0, 0.3),
+            0 0 40px rgba(212, 175, 55, 0.1);
     }
     
     .gallery-grid {
@@ -1001,7 +1001,7 @@ section {
     .hero-image-section {
         order: 1;
         flex: 1;
-        min-height: 140vh;
+        min-height: 100vh;
         padding: 0;
         display: flex;
         align-items: center;
@@ -1011,8 +1011,8 @@ section {
     
     .hero-content-section {
         order: 2;
-        min-height: 140vh;
-        padding: 60px 20px;
+        min-height: 100vh;
+        padding: 40px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1020,15 +1020,15 @@ section {
     }
     
     .image-wrapper {
-        width: 98%;
-        max-width: 600px;
+        width: 85%;
+        max-width: 400px;
         aspect-ratio: 1/1;
-        border-width: 8px;
-        border-radius: 35px;
+        border-width: 4px;
+        border-radius: 20px;
         box-shadow: 
-            0 0 0 4px rgba(212, 175, 55, 0.6),
-            0 40px 80px rgba(0, 0, 0, 0.8),
-            0 0 120px rgba(212, 175, 55, 0.5);
+            0 0 0 2px rgba(212, 175, 55, 0.4),
+            0 15px 30px rgba(0, 0, 0, 0.4),
+            0 0 50px rgba(212, 175, 55, 0.2);
     }
     
     .content-wrapper {
@@ -1137,15 +1137,15 @@ section {
     }
     
     .image-wrapper {
-        width: 95%;
-        max-width: 550px;
+        width: 80%;
+        max-width: 400px;
         aspect-ratio: 1/1;
-        border-width: 5px;
-        border-radius: 25px;
+        border-width: 3px;
+        border-radius: 18px;
         box-shadow: 
-            0 0 0 3px rgba(212, 175, 55, 0.5),
-            0 25px 50px rgba(0, 0, 0, 0.6),
-            0 0 90px rgba(212, 175, 55, 0.3);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 10px 25px rgba(0, 0, 0, 0.3),
+            0 0 40px rgba(212, 175, 55, 0.1);
     }
     
     .content-wrapper {
@@ -1279,15 +1279,15 @@ section {
     }
     
     .image-wrapper {
-        width: 90%;
-        max-width: 420px;
+        width: 80%;
+        max-width: 350px;
         aspect-ratio: 1/1;
-        border-width: 4px;
-        border-radius: 20px;
+        border-width: 3px;
+        border-radius: 16px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 20px 40px rgba(0, 0, 0, 0.5),
-            0 0 70px rgba(212, 175, 55, 0.2);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 8px 20px rgba(0, 0, 0, 0.3),
+            0 0 35px rgba(212, 175, 55, 0.1);
     }
     
     .hero-content-section {
@@ -1346,15 +1346,15 @@ section {
     }
     
     .image-wrapper {
-        width: 88%;
-        max-width: 360px;
+        width: 75%;
+        max-width: 300px;
         aspect-ratio: 1/1;
-        border-width: 3px;
-        border-radius: 18px;
+        border-width: 2px;
+        border-radius: 14px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 15px 30px rgba(0, 0, 0, 0.4),
-            0 0 60px rgba(212, 175, 55, 0.2);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 6px 15px rgba(0, 0, 0, 0.3),
+            0 0 25px rgba(212, 175, 55, 0.1);
     }
     
     .hero-content-section {
@@ -1411,15 +1411,15 @@ section {
     }
     
     .image-wrapper {
-        width: 85%;
-        max-width: 300px;
+        width: 70%;
+        max-width: 280px;
         aspect-ratio: 1/1;
-        border-width: 3px;
-        border-radius: 15px;
+        border-width: 2px;
+        border-radius: 12px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 15px 30px rgba(0, 0, 0, 0.4),
-            0 0 50px rgba(212, 175, 55, 0.2);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 5px 12px rgba(0, 0, 0, 0.3),
+            0 0 20px rgba(212, 175, 55, 0.1);
     }
     
     .hero-content-section {
@@ -1539,15 +1539,15 @@ section {
     }
     
     .image-wrapper {
-        width: 95%;
-        max-width: 350px;
+        width: 80%;
+        max-width: 300px;
         aspect-ratio: 1/1;
-        border-width: 4px;
-        border-radius: 20px;
+        border-width: 3px;
+        border-radius: 16px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 20px 40px rgba(0, 0, 0, 0.5),
-            0 0 70px rgba(212, 175, 55, 0.2);
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 8px 20px rgba(0, 0, 0, 0.3),
+            0 0 35px rgba(212, 175, 55, 0.1);
     }
     
     .hero-content-section {
