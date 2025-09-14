@@ -322,10 +322,35 @@ body {
 .highlight-card {
     background: var(--accent-bg);
     padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
     text-align: center;
-    transition: var(--transition);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.highlight-card::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        45deg,
+        var(--gold) 0%,
+        var(--gold-light) 50%,
+        var(--gold) 100%
+    );
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.highlight-card:hover::after {
+    opacity: 1;
 }
 
 .highlight-card:hover {
@@ -374,11 +399,36 @@ body {
 
 .gallery-item {
     position: relative;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
     aspect-ratio: 4/3;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        45deg,
+        var(--gold) 0%,
+        var(--gold-light) 50%,
+        var(--gold) 100%
+    );
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
 }
 
 .gallery-item:hover {
@@ -436,33 +486,117 @@ body {
 /* Videos Section */
 .videos {
     padding: 6rem 0;
-    background: var(--secondary-bg);
+    background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--primary-bg) 100%);
+    position: relative;
+}
+
+.videos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23d4af37" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23d4af37" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23d4af37" opacity="0.05"/><circle cx="10" cy="60" r="0.5" fill="%23d4af37" opacity="0.05"/><circle cx="90" cy="40" r="0.5" fill="%23d4af37" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    z-index: 1;
 }
 
 .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
 }
 
 .video-item {
     position: relative;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
     aspect-ratio: 16/9;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.4s ease;
+    background: var(--accent-bg);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(212, 175, 55, 0.1);
+}
+
+.video-item::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(
+        45deg,
+        var(--gold) 0%,
+        var(--gold-light) 25%,
+        var(--gold) 50%,
+        var(--gold-light) 75%,
+        var(--gold) 100%
+    );
+    border-radius: 25px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .video-item:hover {
-    transform: scale(1.02);
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.5),
+        0 0 50px rgba(212, 175, 55, 0.3);
+}
+
+.video-item:hover::after {
+    opacity: 1;
+}
+
+.video-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(212, 175, 55, 0.1) 0%,
+        transparent 50%,
+        rgba(212, 175, 55, 0.05) 100%
+    );
+    z-index: 1;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.video-item:hover::before {
+    opacity: 1;
 }
 
 .video-item video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transition);
+}
+
+.video-item:hover video {
+    filter: brightness(0.8) contrast(1.1);
 }
 
 .video-overlay {
@@ -471,12 +605,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(212, 175, 55, 0.2) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: var(--transition);
+    transition: all 0.4s ease;
+    z-index: 2;
 }
 
 .video-item:hover .video-overlay {
@@ -484,20 +624,73 @@ body {
 }
 
 .play-btn {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: linear-gradient(45deg, var(--gold), var(--gold-light));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-bg);
-    font-size: 2rem;
-    transition: var(--transition);
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 10px 30px rgba(212, 175, 55, 0.4),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.play-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 }
 
 .play-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
+    box-shadow: 
+        0 15px 40px rgba(212, 175, 55, 0.6),
+        inset 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.play-btn:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.video-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.7) 50%,
+        transparent 100%
+    );
+    padding: 2rem 1.5rem 1.5rem;
+    color: var(--primary-text);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    z-index: 3;
+}
+
+.video-item:hover .video-title {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Contact Section */
@@ -525,9 +718,34 @@ body {
     gap: 1rem;
     padding: 1.5rem;
     background: var(--accent-bg);
-    border-radius: 15px;
-    border: 1px solid rgba(212, 175, 55, 0.1);
-    transition: var(--transition);
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.contact-item::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        45deg,
+        var(--gold) 0%,
+        var(--gold-light) 50%,
+        var(--gold) 100%
+    );
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.contact-item:hover::after {
+    opacity: 1;
 }
 
 .contact-item:hover {
