@@ -1,3 +1,4 @@
+
 // Smooth scrolling and navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Enhanced mobile navigation toggle
@@ -224,28 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Video play functionality
-    window.playVideo = function(button) {
-        const videoContainer = button.closest('.video-container');
-        const video = videoContainer.querySelector('video');
-        const overlay = videoContainer.querySelector('.video-overlay');
-        
-        if (video.paused) {
-            video.play();
-            overlay.classList.add('hidden');
-            
-            // Pause other videos
-            document.querySelectorAll('video').forEach(v => {
-                if (v !== video && !v.paused) {
-                    v.pause();
-                    v.closest('.video-container').querySelector('.video-overlay').classList.remove('hidden');
-                }
-            });
-        } else {
-            video.pause();
-            overlay.classList.remove('hidden');
-        }
-    };
+    // Video play functionality - removed old function, using openVideoModal instead
     
     // Lightbox functionality
     window.openLightbox = function(imageSrc) {
@@ -582,7 +562,6 @@ function playVideo(button) {
 
 // Export functions for global access
 window.ArsenNercesyan = {
-    playVideo: window.playVideo,
     openVideoModal: window.openVideoModal,
     closeVideoModal: window.closeVideoModal,
     openLightbox: window.openLightbox,
