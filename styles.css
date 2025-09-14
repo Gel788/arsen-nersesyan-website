@@ -1148,24 +1148,24 @@ section {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     .hero-image-section {
-        padding: 30px 15px 0px 15px;
-        min-height: 35vh;
+        padding: 20px 15px 20px 15px;
+        min-height: 40vh;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 100%;
-        max-width: 450px;
+        width: 80%;
+        max-width: 350px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 12px;
     }
     
     .hero-content-section {
-        padding: 0px 15px 30px 15px;
-        min-height: 65vh;
+        padding: 20px 15px 20px 15px;
+        min-height: 60vh;
     }
     
     .content-wrapper {
@@ -1211,24 +1211,24 @@ section {
 /* Extra Small Mobile Devices */
 @media (max-width: 360px) {
     .hero-image-section {
-        padding: 25px 10px 0px 10px;
-        min-height: 30vh;
+        padding: 15px 10px 15px 10px;
+        min-height: 35vh;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 100%;
-        max-width: 400px;
+        width: 75%;
+        max-width: 300px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 10px;
     }
     
     .hero-content-section {
-        padding: 0px 10px 25px 10px;
-        min-height: 70vh;
+        padding: 15px 10px 15px 10px;
+        min-height: 65vh;
     }
     
     .content-wrapper {
@@ -1272,24 +1272,24 @@ section {
 /* Ultra Small Mobile Devices */
 @media (max-width: 320px) {
     .hero-image-section {
-        padding: 20px 8px 0px 8px;
-        min-height: 25vh;
+        padding: 10px 8px 10px 8px;
+        min-height: 30vh;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 100%;
-        max-width: 350px;
+        width: 70%;
+        max-width: 250px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 8px;
     }
     
     .hero-content-section {
-        padding: 0px 8px 20px 8px;
-        min-height: 75vh;
+        padding: 10px 8px 10px 8px;
+        min-height: 70vh;
     }
     
     .content-wrapper {
