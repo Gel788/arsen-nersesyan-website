@@ -963,33 +963,49 @@ section {
 
 /* iPhone 12 Pro Max and Large Phones */
 @media (max-width: 428px) {
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .hero-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
     
     .hero-image-section {
         order: 1;
-        padding: 20px 20px 5px 20px;
-        min-height: auto;
+        flex: 1;
+        min-height: 100vh;
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     }
     
     .hero-content-section {
         order: 2;
-        padding: 5px 20px 20px 20px;
-        min-height: auto;
+        min-height: 100vh;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
     }
     
     .image-wrapper {
-        width: 95%;
-        max-width: 450px;
+        width: 90%;
+        max-width: 400px;
         aspect-ratio: 1/1;
-        border-width: 2px;
-        border-radius: 15px;
+        border-width: 3px;
+        border-radius: 20px;
+        box-shadow: 
+            0 0 0 1px rgba(212, 175, 55, 0.3),
+            0 20px 40px rgba(0, 0, 0, 0.5),
+            0 0 60px rgba(212, 175, 55, 0.2);
     }
     
     .content-wrapper {
@@ -997,30 +1013,47 @@ section {
         max-width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .badge {
         order: 3;
-        margin-top: 15px;
+        margin-top: 30px;
         margin-bottom: 0;
+        font-size: 1rem;
+        padding: 8px 16px;
     }
     
     .hero-title {
         order: 1;
-        font-size: clamp(1.8rem, 7vw, 2.5rem);
-        margin-bottom: 10px;
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+        margin-bottom: 20px;
+        background: linear-gradient(45deg, var(--gold), #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     
     .hero-description {
         order: 2;
-        font-size: 0.95rem;
-        margin-bottom: 15px;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        max-width: 400px;
     }
     
     .hero-actions {
         order: 4;
         justify-content: center;
-        margin-top: 15px;
+        margin-top: 30px;
+        gap: 15px;
+    }
+    
+    .action-btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+        border-radius: 25px;
     }
 }
 
