@@ -971,22 +971,22 @@ section {
     
     .hero-content-section {
         order: 1;
-        padding: 30px 20px 20px 20px;
-        min-height: 45vh;
+        padding: 20px 20px 10px 20px;
+        min-height: auto;
     }
     
     .hero-image-section {
         order: 2;
-        padding: 20px 20px 30px 20px;
-        min-height: 55vh;
+        padding: 10px 20px 20px 20px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 85%;
-        max-width: 380px;
+        width: 90%;
+        max-width: 400px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 15px;
@@ -1001,26 +1001,26 @@ section {
     
     .badge {
         order: 3;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 0;
     }
     
     .hero-title {
         order: 1;
-        font-size: clamp(2rem, 8vw, 3rem);
-        margin-bottom: 15px;
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        margin-bottom: 10px;
     }
     
     .hero-description {
         order: 2;
-        font-size: 1rem;
-        margin-bottom: 20px;
+        font-size: 0.95rem;
+        margin-bottom: 15px;
     }
     
     .hero-actions {
         order: 4;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 }
 
@@ -1067,14 +1067,14 @@ section {
     
     .hero-content-section {
         order: 1;
-        padding: 40px 20px 20px 20px;
-        min-height: 50vh;
+        padding: 20px 20px 10px 20px;
+        min-height: auto;
     }
     
     .hero-image-section {
         order: 2;
-        padding: 20px 20px 40px 20px;
-        min-height: 50vh;
+        padding: 10px 20px 20px 20px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1211,24 +1211,24 @@ section {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     .hero-image-section {
-        padding: 20px 15px 20px 15px;
-        min-height: 40vh;
+        padding: 10px 15px 15px 15px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 80%;
-        max-width: 350px;
+        width: 85%;
+        max-width: 380px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 12px;
     }
     
     .hero-content-section {
-        padding: 20px 15px 20px 15px;
-        min-height: 60vh;
+        padding: 15px 15px 10px 15px;
+        min-height: auto;
     }
     
     .content-wrapper {
@@ -1274,24 +1274,24 @@ section {
 /* Extra Small Mobile Devices */
 @media (max-width: 360px) {
     .hero-image-section {
-        padding: 15px 10px 15px 10px;
-        min-height: 35vh;
+        padding: 10px 10px 15px 10px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 75%;
-        max-width: 300px;
+        width: 80%;
+        max-width: 320px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 10px;
     }
     
     .hero-content-section {
-        padding: 15px 10px 15px 10px;
-        min-height: 65vh;
+        padding: 15px 10px 10px 10px;
+        min-height: auto;
     }
     
     .content-wrapper {
@@ -1335,24 +1335,24 @@ section {
 /* Ultra Small Mobile Devices */
 @media (max-width: 320px) {
     .hero-image-section {
-        padding: 10px 8px 10px 8px;
-        min-height: 30vh;
+        padding: 10px 8px 15px 8px;
+        min-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .image-wrapper {
-        width: 70%;
-        max-width: 250px;
+        width: 75%;
+        max-width: 280px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 8px;
     }
     
     .hero-content-section {
-        padding: 10px 8px 10px 8px;
-        min-height: 70vh;
+        padding: 15px 8px 10px 8px;
+        min-height: auto;
     }
     
     .content-wrapper {
