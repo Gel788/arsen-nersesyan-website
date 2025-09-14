@@ -1004,7 +1004,7 @@ section {
     
     .hero-image-section {
         order: 1;
-        padding: 40px 20px 10px 20px;
+        padding: 40px 20px 0px 20px;
         min-height: 40vh;
         display: flex;
         align-items: flex-end;
@@ -1012,8 +1012,8 @@ section {
     }
     
     .image-wrapper {
-        width: 80%;
-        max-width: 350px;
+        width: 90%;
+        max-width: 400px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 15px;
@@ -1021,7 +1021,7 @@ section {
     
     .hero-content-section {
         order: 2;
-        padding: 10px 20px 40px 20px;
+        padding: 0px 20px 40px 20px;
         min-height: 60vh;
     }
     
@@ -1148,7 +1148,7 @@ section {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     .hero-image-section {
-        padding: 30px 15px 5px 15px;
+        padding: 30px 15px 0px 15px;
         min-height: 35vh;
         display: flex;
         align-items: flex-end;
@@ -1156,15 +1156,15 @@ section {
     }
     
     .image-wrapper {
-        width: 85%;
-        max-width: 300px;
+        width: 95%;
+        max-width: 350px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 12px;
     }
     
     .hero-content-section {
-        padding: 5px 15px 30px 15px;
+        padding: 0px 15px 30px 15px;
         min-height: 65vh;
     }
     
@@ -1211,7 +1211,7 @@ section {
 /* Extra Small Mobile Devices */
 @media (max-width: 360px) {
     .hero-image-section {
-        padding: 25px 10px 5px 10px;
+        padding: 25px 10px 0px 10px;
         min-height: 30vh;
         display: flex;
         align-items: flex-end;
@@ -1219,15 +1219,15 @@ section {
     }
     
     .image-wrapper {
-        width: 90%;
-        max-width: 280px;
+        width: 98%;
+        max-width: 320px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 10px;
     }
     
     .hero-content-section {
-        padding: 5px 10px 25px 10px;
+        padding: 0px 10px 25px 10px;
         min-height: 70vh;
     }
     
@@ -1272,7 +1272,7 @@ section {
 /* Ultra Small Mobile Devices */
 @media (max-width: 320px) {
     .hero-image-section {
-        padding: 20px 8px 3px 8px;
+        padding: 20px 8px 0px 8px;
         min-height: 25vh;
         display: flex;
         align-items: flex-end;
@@ -1280,15 +1280,15 @@ section {
     }
     
     .image-wrapper {
-        width: 95%;
-        max-width: 260px;
+        width: 100%;
+        max-width: 300px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 8px;
     }
     
     .hero-content-section {
-        padding: 3px 8px 20px 8px;
+        padding: 0px 8px 20px 8px;
         min-height: 75vh;
     }
     
