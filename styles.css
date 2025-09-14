@@ -1004,10 +1004,10 @@ section {
     
     .hero-image-section {
         order: 1;
-        padding: 60px 20px 20px 20px;
-        min-height: 50vh;
+        padding: 40px 20px 10px 20px;
+        min-height: 40vh;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
     
@@ -1021,8 +1021,8 @@ section {
     
     .hero-content-section {
         order: 2;
-        padding: 20px 20px 40px 20px;
-        min-height: 50vh;
+        padding: 10px 20px 40px 20px;
+        min-height: 60vh;
     }
     
     .content-wrapper {
@@ -1148,10 +1148,10 @@ section {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     .hero-image-section {
-        padding: 50px 15px 15px 15px;
-        min-height: 45vh;
+        padding: 30px 15px 5px 15px;
+        min-height: 35vh;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
     
@@ -1164,8 +1164,8 @@ section {
     }
     
     .hero-content-section {
-        padding: 15px 15px 30px 15px;
-        min-height: 55vh;
+        padding: 5px 15px 30px 15px;
+        min-height: 65vh;
     }
     
     .content-wrapper {
@@ -1211,10 +1211,10 @@ section {
 /* Extra Small Mobile Devices */
 @media (max-width: 360px) {
     .hero-image-section {
-        padding: 40px 10px 10px 10px;
-        min-height: 40vh;
+        padding: 25px 10px 5px 10px;
+        min-height: 30vh;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
     
@@ -1227,8 +1227,8 @@ section {
     }
     
     .hero-content-section {
-        padding: 10px 10px 25px 10px;
-        min-height: 60vh;
+        padding: 5px 10px 25px 10px;
+        min-height: 70vh;
     }
     
     .content-wrapper {
@@ -1272,10 +1272,10 @@ section {
 /* Ultra Small Mobile Devices */
 @media (max-width: 320px) {
     .hero-image-section {
-        padding: 30px 8px 8px 8px;
-        min-height: 35vh;
+        padding: 20px 8px 3px 8px;
+        min-height: 25vh;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
     
@@ -1288,8 +1288,8 @@ section {
     }
     
     .hero-content-section {
-        padding: 8px 8px 20px 8px;
-        min-height: 65vh;
+        padding: 3px 8px 20px 8px;
+        min-height: 75vh;
     }
     
     .content-wrapper {
