@@ -978,7 +978,7 @@ section {
     .hero-image-section {
         order: 1;
         flex: 1;
-        min-height: 120vh;
+        min-height: 140vh;
         padding: 0;
         display: flex;
         align-items: center;
@@ -988,7 +988,7 @@ section {
     
     .hero-content-section {
         order: 2;
-        min-height: 120vh;
+        min-height: 140vh;
         padding: 60px 20px;
         display: flex;
         align-items: center;
@@ -997,15 +997,15 @@ section {
     }
     
     .image-wrapper {
-        width: 95%;
-        max-width: 500px;
+        width: 98%;
+        max-width: 600px;
         aspect-ratio: 1/1;
-        border-width: 4px;
-        border-radius: 25px;
+        border-width: 8px;
+        border-radius: 35px;
         box-shadow: 
-            0 0 0 2px rgba(212, 175, 55, 0.4),
-            0 30px 60px rgba(0, 0, 0, 0.6),
-            0 0 80px rgba(212, 175, 55, 0.3);
+            0 0 0 4px rgba(212, 175, 55, 0.6),
+            0 40px 80px rgba(0, 0, 0, 0.8),
+            0 0 120px rgba(212, 175, 55, 0.5);
     }
     
     .content-wrapper {
