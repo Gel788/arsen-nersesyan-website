@@ -999,32 +999,30 @@ section {
     .hero-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        gap: -10px;
-    }
-    
-    .hero-image-section {
-        order: 1;
-        padding: 40px 20px -10px 20px;
-        min-height: 40vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin-bottom: -10px;
-    }
-    
-    .image-wrapper {
-        width: 95%;
-        max-width: 450px;
-        aspect-ratio: 1/1;
-        border-width: 2px;
-        border-radius: 15px;
+        gap: 0;
     }
     
     .hero-content-section {
+        order: 1;
+        padding: 40px 20px 20px 20px;
+        min-height: 50vh;
+    }
+    
+    .hero-image-section {
         order: 2;
-        padding: -10px 20px 40px 20px;
-        min-height: 60vh;
-        margin-top: -10px;
+        padding: 20px 20px 40px 20px;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image-wrapper {
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 1/1;
+        border-width: 2px;
+        border-radius: 15px;
     }
     
     .content-wrapper {
@@ -1158,8 +1156,8 @@ section {
     }
     
     .image-wrapper {
-        width: 98%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 450px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 12px;
@@ -1222,7 +1220,7 @@ section {
     
     .image-wrapper {
         width: 100%;
-        max-width: 350px;
+        max-width: 400px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 10px;
@@ -1283,7 +1281,7 @@ section {
     
     .image-wrapper {
         width: 100%;
-        max-width: 320px;
+        max-width: 350px;
         aspect-ratio: 1/1;
         border-width: 1px;
         border-radius: 8px;
