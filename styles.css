@@ -971,13 +971,13 @@ section {
     
     .hero-content-section {
         order: 1;
-        padding: 20px 20px 10px 20px;
+        padding: 20px 20px 5px 20px;
         min-height: auto;
     }
     
     .hero-image-section {
         order: 2;
-        padding: 10px 20px 20px 20px;
+        padding: 5px 20px 20px 20px;
         min-height: auto;
         display: flex;
         align-items: center;
@@ -985,8 +985,8 @@ section {
     }
     
     .image-wrapper {
-        width: 90%;
-        max-width: 400px;
+        width: 95%;
+        max-width: 450px;
         aspect-ratio: 1/1;
         border-width: 2px;
         border-radius: 15px;
